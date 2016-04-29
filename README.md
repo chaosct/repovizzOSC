@@ -23,7 +23,8 @@ $ . env/bin/activate
 (env)$ pip install -r requirements.txt
 
 # running the server
-(env)$ python ws_to_osc.py
+(env)$ python ws_to_osc.py #with GUI
+(env)$ python ws_to_osc.py --cli #without GUI
 ```
 
 
