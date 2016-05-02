@@ -12,6 +12,8 @@ repovizz in browser --(websocket)--> ws_to_osc.py --(OSC)--> 3rd Party software
 Setup
 -----
 
+You can use a pre-compiled binary instead.
+
 We have to set up the websocket-toOSC server:
 
 ```
@@ -23,8 +25,8 @@ $ . env/bin/activate
 (env)$ pip install -r requirements.txt
 
 # running the server
-(env)$ python ws_to_osc.py #with GUI
-(env)$ python ws_to_osc.py --cli #without GUI
+(env)$ python repoVizzOSC.py #with GUI
+(env)$ python repoVizzOSC.py --cli #without GUI
 ```
 
 
