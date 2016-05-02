@@ -53,10 +53,11 @@ def addr_getter():
 
 def server(queue):
     global osc, q
-    q = queue
-    t = Thread(target=addr_getter)
-    t.daemon = True
-    t.start()
+    if queue:
+        q = queue
+        t = Thread(target=addr_getter)
+        t.daemon = True
+        t.start()
     osc = OSC.OSCClient()
     try:
         socketio.run(app, port=5000)

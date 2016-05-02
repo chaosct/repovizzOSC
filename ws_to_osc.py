@@ -63,7 +63,7 @@ def gui():
     root.mainloop()
 
 
-def server(q):
+def server(q=None):
     from server import server
     server(q)
 
