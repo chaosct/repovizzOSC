@@ -8,6 +8,7 @@ repovizz in browser --(websocket)--> ws_to_osc.py --(OSC)--> 3rd Party software
 
 **Author/contact**: carles.fernandez@upf.edu
 
+![repoVizzOSC GUI](gui.png)
 
 Setup
 -----
