@@ -20,7 +20,7 @@ queue = Queue()
 
 def gui():
     root = Tk()
-    root.title("repoVizz OSC")
+    root.title("repoVizzOSC")
 
     def change_addr(*args):
         try:
