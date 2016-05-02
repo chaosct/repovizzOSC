@@ -69,6 +69,17 @@ def server(q=None):
 
 
 def main():
+    global connectaddr
+    args = sys.argv[1:]
+    args = [a for a in args if a != '--cli']
+    if len(args) == 2:
+        h = args[0]
+        p = int(args[1])
+        connectaddr = (h,p)
+    elif args:
+        print "Usage: {} [--cli] [hostname port]".format(sys.argv[0])
+        exit(1)
+    print "Sending OSC to {}:{}".format(*connectaddr)
     if '--cli' not in sys.argv:
         t = Process(target=server, args=(queue,))
         t.daemon = True
