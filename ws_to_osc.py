@@ -34,14 +34,14 @@ def gui():
     mainframe.rowconfigure(0, weight=1)
 
     ttk.Label(mainframe, text="Sending OSC messages").grid(
-        column=1, row=1, sticky=E)
+        column=1, row=1, sticky=W)
     ttk.Button(mainframe, text="Change", command=change_addr).grid(
         column=1, row=3, sticky=E)
 
     configframe = ttk.Frame(mainframe, padding="2 2 0 0")
     configframe.grid(column=1, row=2, sticky=(N, W, E, S))
-    # configframe.columnconfigure(0, weight=1)
-    # configframe.rowconfigure(0, weight=1)
+    configframe.columnconfigure(0, weight=1)
+    configframe.rowconfigure(0, weight=1)
 
     ttk.Label(configframe, text="host ").grid(column=1, row=1, sticky=(W, E))
     ttk.Label(configframe, text="port ").grid(column=1, row=2, sticky=(W, E))
@@ -59,6 +59,8 @@ def gui():
 
     for child in mainframe.winfo_children():
         child.grid_configure(padx=5, pady=5)
+
+    root.bind('<Return>', change_addr)
 
     root.mainloop()
 
