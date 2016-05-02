@@ -80,7 +80,7 @@ def main():
         connectaddr = (h,p)
     elif args:
         print "Usage: {} [--cli] [hostname port]".format(sys.argv[0])
-        exit(1)
+        return
     print "Sending OSC to {}:{}".format(*connectaddr)
     if '--cli' not in sys.argv:
         t = Process(target=server, args=(queue,))

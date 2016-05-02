@@ -9,7 +9,10 @@ import sys
 
 import OSC
 from flask import Flask
-from flask.ext.socketio import SocketIO
+
+# we need to use this instead of flask.ext.socketio
+# so PyInstall works
+from flask_socketio import SocketIO
 
 app = Flask(__name__)
 socketio = SocketIO(app)
