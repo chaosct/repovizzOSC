@@ -1,4 +1,4 @@
 
 # Needs PyInstaller 
 
-pyinstaller --onefile --windowed repoVizzOSC
+pyinstaller --onefile --windowed repoVizzOSC.py
