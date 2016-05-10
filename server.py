@@ -17,7 +17,7 @@ from flask_socketio import SocketIO
 app = Flask(__name__)
 socketio = SocketIO(app)
 
-from ws_to_osc import connectaddr
+connectaddr = ('localhost', 6448)
 
 
 def send(msg):

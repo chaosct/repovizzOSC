@@ -1,4 +1,4 @@
 
 # Needs PyInstaller 
 
-pyinstaller --onefile --windowed repoVizzOSC.py
+pyinstaller --onefile --windowed --icon rvz.icns repoVizzOSC.py
