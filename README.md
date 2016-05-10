@@ -13,7 +13,9 @@ repovizz in browser --(websocket)--> ws_to_osc.py --(OSC)--> 3rd Party software
 Setup
 -----
 
-You can use a pre-compiled binary instead.
+You can use a [pre-compiled binary](https://github.com/chaosct/repovizzOSC/releases) instead.
+
+From source:
 
 We have to set up the websocket-toOSC server:
 
