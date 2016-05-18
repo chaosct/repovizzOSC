@@ -4,7 +4,9 @@ Repovizz player to OSC
 This software adds to repovizz the feature to send the played streams to 3rd party
 software using OSC. The principle is very simple:
 
-repovizz in browser --(websocket)--> ws_to_osc.py --(OSC)--> 3rd Party software
+repovizz in browser --(websocket)--> repoVizzOSC --(OSC)--> 3rd Party software
+
+The default settings (port) are designed to match [Wekinator](http://www.wekinator.org/)'s.
 
 **Author/contact**: carles.fernandez@upf.edu
 
@@ -17,7 +19,6 @@ You can use a [pre-compiled binary](https://github.com/chaosct/repovizzOSC/relea
 
 From source:
 
-We have to set up the websocket-toOSC server:
 
 ```
 # virtualenv stuff (optional)
@@ -47,4 +48,17 @@ and press `o` key to send the bulk of messages.
 License
 -------
 
-This repository needs a license.
+    Copyright (C) 2016  repoVizz
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
